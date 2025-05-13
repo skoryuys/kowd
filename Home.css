@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+
+    max-width: 100vw;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+/* ul, li */
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+}
+
+.header{
+grid-area: header;
+background-color: #222831;
+padding: 20px;
+}
+.logo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+    line-height: 1.3;
+}
+.header-text{
+    font-size: 20px;
+    font-family: Century Gothic;
+    padding-left: 45px;
+    padding-top: 6px;
+    float: right;
+    padding-right: 25px;
+}
+.main{
+grid-area: main;
+}
+ 
+
+.footer{
+grid-area: footer;
+background-color: #2b2f35;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 0px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 4px 10px 4px 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 60%;
+}
+.socialIcons a i{
+    font-size: 32;
+    color: black;
+    opacity: 0.8;
+}
+/* Icons Hove */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footerNavbar{
+    margin: 30px 0;
+}
+.footerNavbar ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNavbar ul li a{
+    color: #fff;
+    margin: 15px;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.footerNavbar ul li a:hover{
+    opacity: 1;
+}
+.footerBot{
+    background-color: #000;
+    opacity: 0.8;
+    padding: 10px;
+    text-align: center;
+}
+.footerBot p{
+    color: #fff;
+}
